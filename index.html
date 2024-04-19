@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="carousel.css">
   <script src="javascript.js"></script>
   <title>Site pour Monsieur Diop</title>
 </head>
@@ -17,7 +18,7 @@
     <li><strong><a href="#hobbies">Nos Consultants</a></strong></li>
     <li><strong><a href="#comp-info">24+</a></strong></li>
     <li><strong><a href="#education">Crisis</a></strong></li>
-    <li><strong><a href="#xp">FAC</a></strong></li>
+    <li><strong><a href="fac.html">FAC</a></strong></li>
     <li><strong><a href="#profile">Accueil</a></strong></li>
   </ul>
 </nav>
@@ -38,11 +39,11 @@
     <div class="container-image">
       <img src="https://fac-crisis.fr/wp-content/uploads/2022/02/20220115104556_4554.jpg" alt="Description de l'image">
       <div class="text">
-          <p><b>Pour vos formations, VAE, Bilan de compétences <br/> <br/>
-            Des experts méthodologiques, des experts du diplôme, des experts du métier.
-            Nos formations sont une <b>garantie de qualité</b> et d’<b>amélioration</b> dans la mise en œuvre des services relatifs à l’accompagnement des différents publics du <b>médico-social et de l'accompagnement et la formation du personnel.</b></p>
-            <button class="button" 
-            type="button"><b>Déposer vos annonces d'emplois</b></button>
+          <br class="para-image"><b>FORMATIONS / VAE / BILAN DE COMPETENCE</b></br> </br><b>Pour vos formations, VAE, Bilan de compétences</b> <br/> <br/>
+          Des experts méthodologiques, des experts du diplôme, des experts du métier. 
+          Nos formations sont une <b>garantie de qualité</b> et d’<b>amélioration</b> dans la mise en œuvre des services relatifs à l’accompagnement des différents publics du <b>médico-social et de l'accompagnement et la formation du personnel.</b></p>
+          <button class="button" 
+          type="button"><b>Déposer vos annonces d'emplois</b></button>
       </div> 
     </div>
 </section>
@@ -55,58 +56,26 @@
 </div>
 </section>
 <section id="education" class="secondary-block">
-  <div class="content">
+  <div class="content-slide">
     <h3><em><strong>Ils nous font confiance</strong></em></h3>
-    <div class="container">
-  <div class="faders">
-    <div class="left"></div>
-    <div class="right"></div>
-  </div>
-
-  <div class="items">
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src=data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+    <div id="container">
+      <div id="slider-container">
+        <span onclick="slideRight()" class="btn"></span>
+        <div id="slider">
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+          <div class="slide"><span>150x150</span></div>
+        </div>
+        <span onclick="slideLeft()" class="btn"></span>
+      </div>
     </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-    <div class="entry">
-      <p class="name">John Doe</p>
-      <img src="data.jpeg" alt="Smiling person" />
-      <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
-    </div>
-  </div>
-</div>
-</div>
 </section>
 
 
@@ -137,55 +106,52 @@
 </section>
 
 
-<footer class="primary-block-bis">
-  <div class="contenu-footer">
-    <div class="bloc footer-services">
-   
-     <h3>Nos Services</h3>
-      <ul class="liste-services">
-        <li><a href="#">Blabla</a></li>
-        <li><a href="#">Blabla</a></li>
-        <li><a href="#">Blabla</a></li>
-        <li><a href="#">Blabla</a></li>
-        <li><a href="#">Blabla</a></li>
-        <li><a href="#">Blabla</a></li>
-      </ul>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <h3>Auxi<span>Formation</span>(logo à la place)</h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Copyright © 2024 <strong>Auxiformation</strong> Tous droits réservés</p>
   </div>
 
-  <div class="bloc footer-contact">
-   
-    <h3>Restons en contact</h3>
-    <p>07-51-00-00-00</p>
-    <p>contact@netprosante.fr</p>
-    <p>Asnières-sur-Seine, 92200</p>
-</div>
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Auxiformation</span>
+              Paris</p>
+      </div>
 
-<div class="bloc footer-horaires">
-   
-   <h3>Les horraires</h3>
-    <ul class="liste-services">
-      <li><a href="">Lun 10h-19h</a></li>
-      <li><a href="">Lun 10h-19h</a></li>
-      <li><a href="">Lun 10h-19h</a></li>
-      <li><a href="">Lun 10h-19h</a></li>
-      <li><a href="">Sam fermé</a></li>
-      <li><a href="">Dim fermé</a></li>
-    </ul>
-</div>
-<div class="bloc footer-medias">
-   
-   <h3>Nos réseaux</h3>
-    <ul class="liste-services">
-      <li><a href="#">Facebook/monsite</a></li>
-      <li><a href="#">Facebook/monsite</a></li>
-      <li><a href="#">Facebook/monsite</a></li>
-      <li><a href="#">Facebook/monsite</a></li>
-      <li><a href="#">Facebook/monsite</a></li>
-      <li><a href="#">Facebook/monsite</a></li>
-    </ul>
-</div>
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+33 61 72 36 51</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:alioune@auxifamily.com">alioune@auxifamily.com</a></p>
+      </div>
   </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>A propos de Auxiformation</span>
+          <strong>Auxiformation</strong> est une plateforme de formation en ligne
+      </p>
+      <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
   </div>
 </footer>
+<script src="carousel.js"></script>
 </body>
 </html>
